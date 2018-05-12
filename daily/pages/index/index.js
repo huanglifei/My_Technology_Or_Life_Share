@@ -7,7 +7,12 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    navarr:[
+      {'name':'全部'},
+      {'name':'女装' },
+      { 'name': '男装' },
+    ]
   },
   //事件处理函数
   bindViewTap: function() {
