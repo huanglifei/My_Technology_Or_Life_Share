@@ -1,7 +1,42 @@
 /**index.wxss**/
-.container{
-  background: #f96251;
+.containera{
+   background: #f7f7f7; 
   font-size: 28rpx;
+   display: block;
+}
+.headbox{
+  width:200rpx;
+  height:200rpx;
+  border-radius: 50%;
+}
+.namebox{
+  font-size: 28rpx;
+  padding-top: 20rpx;
+}
+
+.logobox{
+  width: 90%;
+  margin: auto;
+  display: block;
+  padding: 20rpx 0rpx;
+}
+.logo-sty{
+   width: 120rpx;
+   height:120rpx;
+   display: inline-block
+}
+.name-box{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+  /* color: #fff; */
+  
+}
+
+.logo-sty image{
+  width: 100%;
+  height:100%;
 }
 .seekbox {
   width: 94%;

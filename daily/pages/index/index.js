@@ -11,13 +11,36 @@ Page({
     navarr:[
       {'name':'全部'},
       {'name':'女装' },
-      { 'name': '男装' },
-    ]
+      {'name': '男装' },
+      { 'name': '内衣' },
+      { 'name': '美妆' },
+
+    ],
+    logourl:'/images/swop_logo.jpg',
+    logomode:'aspectFit',
+    exhibitionname:'swop 2019 包装世界（上海）博览会',
+    scanQRcodeinfo:'',
+
+
+    
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+
+  scanQRcode:function(){
+    wx.scanCode({
+      success: (res) => {
+        console.log(res)
+
+        this.setData({
+          scanQRcodeinfo: res.result
+          
+        })
+      }
     })
   },
   onLoad: function () {
